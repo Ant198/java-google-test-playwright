@@ -3,7 +3,7 @@ package Pages;
 import Base.PageTools;
 
 public class HomePage extends PageTools {
-    private String searchField = "//textArea[contains(@class,\"gLFyf\")]";
+    private final String searchField = "//textArea[contains(@class,\"gLFyf\")]";
 
     public void typeText(String text) {
         receivePage().locator(searchField).fill(text);
